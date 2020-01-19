@@ -1,6 +1,6 @@
 #!/bin/bash
 if [ "${TRAVIS_BUILD_DIR}" == '' ]; then
-    echo "This is intended too run on Travis CI."
+    echo "This is intended to run on Travis CI."
     exit 1
 fi
 set -e

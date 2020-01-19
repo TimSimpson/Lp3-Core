@@ -49,7 +49,7 @@ def cmd_clean(args: argparse.ArgumentParser) -> int:
     return 0
 
 
-def cmd_run(args: argparse.ArgumentParser) -> int:
+def cmd_build(args: argparse.ArgumentParser) -> int:
     profile_path = PROFILES_PATH / args.profile
     build_dir = OUTPUT_DIR / args.profile
     if not profile_path.exists():
@@ -80,9 +80,9 @@ def main() -> int:
     _add_argument_profile(clean)
     clean.set_defaults(func=cmd_clean)
 
-    run = commands.add_parser('run', help='Runs CI')
-    _add_argument_profile(run)
-    run.set_defaults(func=cmd_run)
+    build = commands.add_parser('build', help='Runs CI')
+    _add_argument_profile(build)
+    build.set_defaults(func=cmd_build)
 
     list_profiles = commands.add_parser('list-profiles', help='Show profiles')
     list_profiles.set_defaults(func=cmd_list_profiles)
