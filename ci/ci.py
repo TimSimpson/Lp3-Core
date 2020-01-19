@@ -92,4 +92,6 @@ def main() -> int:
 
 
 if __name__=="__main__":
+    print("THIS IS WHAT ARGV SAYS")
+    print(sys.argv)
     sys.exit(main())

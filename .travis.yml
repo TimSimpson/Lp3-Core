@@ -53,4 +53,4 @@ install:
   - ./ci/travis/install.sh
 
 script:
-  - ./ci/travis/ci.sh run
+  - ./ci/travis/run.sh build

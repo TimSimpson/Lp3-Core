@@ -20,4 +20,4 @@ fi
 echo 'What version of Python is this?'
 python --version
 
-"${scripts_dir}"/../run.sh
+python "${scripts_dir}"/../run.py $@
