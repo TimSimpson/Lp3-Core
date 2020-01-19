@@ -6,4 +6,4 @@ if "%APPVEYOR_BUILD_FOLDER%"=="" (
 set PYTHON="C:\Python37"
 set PATH=%PYTHON%\Scripts;%PATH%
 
-python %~dp0\..\ci.py %*
+%PYTHON%\python %~dp0\..\ci.py %*
