@@ -10,4 +10,4 @@ install:
   - ci\appveyor\install.bat
 
 build_script:
-  - ci\appveyor\run.bat %PROFILE%
+  - python ci\ci.py run
