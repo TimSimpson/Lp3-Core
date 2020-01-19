@@ -11,4 +11,4 @@ install:
 
 build_script:
   - set PATH=%PYTHON%\Scripts;%PATH%
-  - python ci\ci.py run
+  - python3 ci\ci.py run

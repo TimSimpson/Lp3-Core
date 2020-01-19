@@ -53,4 +53,4 @@ install:
   - ./ci/travis/install.sh
 
 script:
-  - python ./ci/ci.py run
+  - python3 ./ci/ci.py run
