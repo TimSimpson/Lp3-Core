@@ -12,10 +12,11 @@
 
 
 namespace core = lp3::core;
+namespace main = lp3::main;
 namespace sdl = lp3::sdl;
 
 
-int _main(core::PlatformLoop & loop) {
+int _main(main::PlatformLoop & loop) {
     sdl::SDL2 sdl2(SDL_INIT_VIDEO);
 
     core::LogSystem log;
